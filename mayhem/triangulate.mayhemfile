@@ -1,0 +1,6 @@
+project: delaunator-rs
+target: triangulate
+duration: 300
+
+cmds:
+  - cmd: /triangulate
