@@ -1,0 +1,30 @@
+[package]
+name = "delaunator-fuzz"
+version = "0.1.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+[dependencies.delaunator]
+path = ".."
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "point"
+path = "fuzz_targets/point.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "triangulate"
+path = "fuzz_targets/triangulate.rs"
+test = false
+doc = false

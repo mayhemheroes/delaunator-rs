@@ -1,0 +1,6 @@
+project: delaunator-rs
+target: point
+duration: 300
+
+cmds:
+  - cmd: /point
